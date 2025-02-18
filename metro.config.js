@@ -1,6 +1,6 @@
 const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config')
 const { getMetroConfig } = require('@tarojs/rn-supporter')
-const {createHarmonyMetroConfig} = require('react-native-harmony/metro.config');
+const {createHarmonyMetroConfig} = require('@react-native-oh/react-native-harmony/metro.config');
 
 /**
  * Metro configuration
@@ -11,5 +11,7 @@ const {createHarmonyMetroConfig} = require('react-native-harmony/metro.config');
 const config = {}
 
 module.exports = (async function (){
-  return mergeConfig(getDefaultConfig(__dirname), await getMetroConfig({}, createHarmonyMetroConfig()), config)
+  return mergeConfig(getDefaultConfig(__dirname), await getMetroConfig({}, createHarmonyMetroConfig({
+    reactNativeHarmonyPackageName: '@react-native-oh/react-native-harmony',
+  })), config)
 })()
