@@ -13,7 +13,9 @@ set(WITH_HITRACE_SYSTRACE 1) # for other CMakeLists.txt files to use
 
 add_subdirectory("${RNOH_CPP_DIR}" ./rn)
 
+file(GLOB GENERATED_CPP_FILES "./generated/*.cpp")
 add_library(rnoh_app SHARED
+    ${GENERATED_CPP_FILES}
     "./PackageProvider.cpp"
     "${RNOH_CPP_DIR}/RNOHAppNapiBridge.cpp"
 )

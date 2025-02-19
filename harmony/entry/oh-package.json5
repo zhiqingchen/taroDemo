@@ -6,7 +6,8 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "@rnoh/react-native-openharmony": "^0.72.53"
+    "@rnoh/react-native-openharmony": "^0.72.53",
+    "@react-native-oh-tpl/react-native-safe-area-context": "file:../../node_modules/@react-native-oh-tpl/react-native-safe-area-context/harmony/safe_area.har"
   },
   "devDependencies": {},
   "dynamicDependencies": {}

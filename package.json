@@ -31,6 +31,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start --custom-log-reporter-path @tarojs/rn-supporter/TerminalReporter.js",
+    "codegen": "react-native codegen-harmony --cpp-output-path ./harmony/entry/src/main/cpp/generated --rnoh-module-path ./harmony/entry/oh_modules/@rnoh/react-native-openharmony",
     "podInstall": "pod-install",
     "upgradePeerdeps": "install-peerdeps @tarojs/taro-rn@4.0.9 -o -P && install-peerdeps @tarojs/components-rn@4.0.9 -o -P && install-peerdeps @tarojs/router-rn@4.0.9 -o -P && pod-install"
   },
