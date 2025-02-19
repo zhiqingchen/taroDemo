@@ -99,6 +99,7 @@
     "@types/react": "^18.2.6",
     "@types/webpack-env": "^1.13.6",
     "babel-preset-taro": "4.0.9",
+    "babel-plugin-transform-react-jsx-to-rn-stylesheet": "4.0.9",
     "eslint": "^8.19.0",
     "eslint-config-taro": "4.0.9",
     "eslint-plugin-import": "^2.12.0",
