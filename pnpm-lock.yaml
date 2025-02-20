@@ -23,27 +23,21 @@ importers:
       '@react-native-oh-tpl/clipboard':
         specifier: 1.13.2-0.0.9
         version: 1.13.2-0.0.9(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
-      '@react-native-oh-tpl/lottie-react-native':
-        specifier: 6.4.1-0.1.15
-        version: 6.4.1-0.1.15(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
+      '@react-native-oh-tpl/geolocation':
+        specifier: 3.1.0-0.0.7
+        version: 3.1.0-0.0.7(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
       '@react-native-oh-tpl/netinfo':
         specifier: 11.1.0-0.0.8
         version: 11.1.0-0.0.8(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))
       '@react-native-oh-tpl/picker':
         specifier: 2.6.1-nc.0.2.5
         version: 2.6.1-nc.0.2.5(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
-      '@react-native-oh-tpl/react-native-geolocation':
-        specifier: 3.1.0-0.0.6
-        version: 3.1.0-0.0.6(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
       '@react-native-oh-tpl/react-native-gesture-handler':
         specifier: 2.14.15
         version: 2.14.15(react-native-gesture-handler@2.14.1(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1))(react-native-harmony@0.0.1)(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
       '@react-native-oh-tpl/react-native-image-picker':
         specifier: 7.0.3-0.1.6
         version: 7.0.3-0.1.6(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
-      '@react-native-oh-tpl/react-native-linear-gradient':
-        specifier: 3.0.0-0.5.0
-        version: 3.0.0-0.5.0(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
       '@react-native-oh-tpl/react-native-pager-view':
         specifier: 6.2.3-0.2.8
         version: 6.2.3-0.2.8(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
@@ -1769,21 +1763,12 @@ packages:
       react: '>=16.0'
       react-native: '>=0.57.0'
 
-  '@react-native-oh-tpl/lottie-react-native@6.4.1-0.1.15':
-    resolution: {integrity: sha512-DKnKVoip62/JGxWj8n3beo2eVzhhfbOIEtnWqjbvgWj1lHlA621rtKqM6+GgPehbTkpNL09NMBSLO4NWtjqXEw==}
+  '@react-native-oh-tpl/geolocation@3.1.0-0.0.7':
+    resolution: {integrity: sha512-SryyAsOewa+NlMy8eAy5NGoqnfeVhV6bnOuLaEBX9aLfrgPfa4/NE/yS5Bsz6QB+50NCbmdiA43G5/ZtO8sgPg==}
+    engines: {node: '>=16.0.0'}
     peerDependencies:
-      '@dotlottie/react-player': ^1.6.1
-      '@lottiefiles/react-lottie-player': ^3.5.3
       react: '*'
-      react-native: '>=0.46'
-      react-native-windows: '>=0.63.x'
-    peerDependenciesMeta:
-      '@dotlottie/react-player':
-        optional: true
-      '@lottiefiles/react-lottie-player':
-        optional: true
-      react-native-windows:
-        optional: true
+      react-native: '*'
 
   '@react-native-oh-tpl/netinfo@11.1.0-0.0.8':
     resolution: {integrity: sha512-IKlob5NGERCbxkPwCTD+ODgUuu0Xj/DkwHK3LsBTzrXf5pMDwe26n5MonepF1R96Ke735sVrtAv0IVhFsBZ4eg==}
@@ -1796,13 +1781,6 @@ packages:
       react: '>=16'
       react-native: '>=0.57'
 
-  '@react-native-oh-tpl/react-native-geolocation@3.1.0-0.0.6':
-    resolution: {integrity: sha512-7tGv5pAzN0FS41SkvOT2u0NOk/ZO8UVHAAPTvQCVN2RuZ7opxg7Rb3RqCWGNyEyR/Et/YALQEA++kg3Sz6VVxQ==}
-    engines: {node: '>=16.0.0'}
-    peerDependencies:
-      react: '*'
-      react-native: '*'
-
   '@react-native-oh-tpl/react-native-gesture-handler@2.14.15':
     resolution: {integrity: sha512-JiJ4rF4TWNE7hEGcMsJ7bw47GLzDsGjNAnBIjA/VE+tfgFDZrR2vwpPl16PeoijskSyQ8zGvtxa7BbQMOqedUg==}
     peerDependencies:
@@ -1813,12 +1791,6 @@ packages:
 
   '@react-native-oh-tpl/react-native-image-picker@7.0.3-0.1.6':
     resolution: {integrity: sha512-CyqHc3lJOUtF4zsV/UQr6oaqXji8YU7bUpNMLJPR6jz4B89GUrus8Ruw2d+3ABznnfnhCN2PMR8AHCm3is95LA==}
-    peerDependencies:
-      react: '*'
-      react-native: '*'
-
-  '@react-native-oh-tpl/react-native-linear-gradient@3.0.0-0.5.0':
-    resolution: {integrity: sha512-u+hIeTa7lnP0keb2qurFTpfLtD8iVuov50C+aqLzXbOC9voAbeNwSAcCsXXkTWzL3c+sH7SX0zeUAyit+0s77g==}
     peerDependencies:
       react: '*'
       react-native: '*'
@@ -6151,22 +6123,6 @@ packages:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
 
-  lottie-react-native@6.4.1:
-    resolution: {integrity: sha512-DPsUPSxLc3ZffeRQ/AtKtcUl4PzmJEEPt965tNpWSE4vhDkoGFxRe0TPZ45xX8/3HbGsUl48aMdLlAu28MEDsQ==}
-    peerDependencies:
-      '@dotlottie/react-player': ^1.6.1
-      '@lottiefiles/react-lottie-player': ^3.5.3
-      react: '*'
-      react-native: '>=0.46'
-      react-native-windows: '>=0.63.x'
-    peerDependenciesMeta:
-      '@dotlottie/react-player':
-        optional: true
-      '@lottiefiles/react-lottie-player':
-        optional: true
-      react-native-windows:
-        optional: true
-
   lower-case@1.1.4:
     resolution: {integrity: sha512-2Fgx1Ycm599x+WGpIYwJOvsjmXFzTSc34IwDWALRA/8AopUKAVPwfJ+h5+f85BCp0PWmmJcWzEpxOpoXycMpdA==}
 
@@ -7564,12 +7520,6 @@ packages:
 
   react-native-known-styling-properties@1.3.0:
     resolution: {integrity: sha512-/sLwzlQnuA6uto4l/c00Z9yIBMDXJaYfoIDh7J92n0K9a6+6KBNXoN7e0TZu2qOtcJNnurk3NjOZFB00dplVsA==}
-
-  react-native-linear-gradient@2.8.3:
-    resolution: {integrity: sha512-KflAXZcEg54PXkLyflaSZQ3PJp4uC4whM7nT/Uot9m0e/qxFV3p6uor1983D1YOBJbJN7rrWdqIjq0T42jOJyA==}
-    peerDependencies:
-      react: '*'
-      react-native: '*'
 
   react-native-maps@1.3.2:
     resolution: {integrity: sha512-NB7HGRZOgxxXCWzrhIVucx/bsrEWANvk3DLci1ov4P9MQnEVQYQCCkTxsnaEvO191GeBOCRDyYn6jckqbfMtmg==}
@@ -11229,9 +11179,9 @@ snapshots:
       react: 18.3.1
       react-native: 0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1)
 
-  '@react-native-oh-tpl/lottie-react-native@6.4.1-0.1.15(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)':
+  '@react-native-oh-tpl/geolocation@3.1.0-0.0.7(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)':
     dependencies:
-      lottie-react-native: 6.4.1(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
+      '@react-native-community/geolocation': 3.1.0(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-native: 0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1)
 
@@ -11243,12 +11193,6 @@ snapshots:
   '@react-native-oh-tpl/picker@2.6.1-nc.0.2.5(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@react-native-picker/picker': 2.6.1(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
-      react: 18.3.1
-      react-native: 0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1)
-
-  '@react-native-oh-tpl/react-native-geolocation@3.1.0-0.0.6(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@react-native-community/geolocation': 3.1.0(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-native: 0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1)
 
@@ -11264,12 +11208,6 @@ snapshots:
       react: 18.3.1
       react-native: 0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1)
       react-native-image-picker: 7.0.3(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
-
-  '@react-native-oh-tpl/react-native-linear-gradient@3.0.0-0.5.0(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      react: 18.3.1
-      react-native: 0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1)
-      react-native-linear-gradient: 2.8.3(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
 
   '@react-native-oh-tpl/react-native-pager-view@6.2.3-0.2.8(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -16685,11 +16623,6 @@ snapshots:
     dependencies:
       js-tokens: 4.0.0
 
-  lottie-react-native@6.4.1(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1):
-    dependencies:
-      react: 18.3.1
-      react-native: 0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1)
-
   lower-case@1.1.4: {}
 
   lower-case@2.0.2:
@@ -18316,11 +18249,6 @@ snapshots:
       react-native-image-pan-zoom: 2.1.12(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1)
 
   react-native-known-styling-properties@1.3.0: {}
-
-  react-native-linear-gradient@2.8.3(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1):
-    dependencies:
-      react: 18.3.1
-      react-native: 0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1)
 
   react-native-maps@1.3.2(react-native@0.72.17(@babel/core@7.26.9)(@babel/preset-env@7.26.9(@babel/core@7.26.9))(react@18.3.1))(react@18.3.1):
     dependencies:

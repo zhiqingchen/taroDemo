@@ -11,9 +11,31 @@ import {
   RNOHCoreContext
 } from '@rnoh/react-native-openharmony';
 import { createRNPackages } from '../RNPackagesFactory';
+import { RNCPicker, PICKER_TYPE } from "@react-native-oh-tpl/picker";
+import { WebView, WEB_VIEW } from "@react-native-oh-tpl/react-native-webview";
+import { RNCSlider, SLIDER_TYPE } from "@react-native-oh-tpl/slider";
 
 @Builder
-export function buildCustomRNComponent(ctx: ComponentBuilderContext) {}
+export function buildCustomRNComponent(ctx: ComponentBuilderContext) {
+  if (ctx.componentName === PICKER_TYPE) {
+    RNCPicker({
+      ctx: ctx.rnComponentContext,
+      tag: ctx.tag
+    })
+  }
+  if (ctx.componentName === WEB_VIEW) {
+    WebView({
+      ctx: ctx.rnComponentContext,
+      tag: ctx.tag
+    })
+  }
+  if (ctx.componentName === SLIDER_TYPE) {
+    RNCSlider({
+      ctx: ctx.rnComponentContext,
+      tag: ctx.tag,
+    })
+  }
+}
 
 const wrappedCustomRNComponentBuilder = wrapBuilder(buildCustomRNComponent)
 
@@ -52,7 +74,11 @@ struct Index {
             enableNDKTextMeasuring: true, // 该项必须为true，用于开启NDK文本测算
             enableBackgroundExecutor: false,
             enableCAPIArchitecture: true, // 该项必须为true，用于开启CAPI
-            arkTsComponentNames: []
+            arkTsComponentNames: [
+              PICKER_TYPE,
+              WEB_VIEW,
+              SLIDER_TYPE,
+            ]
           },
           initialProps: { "foo": "bar" } as Record<string, string>,
           appKey: "taroDemo",
